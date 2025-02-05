@@ -12,7 +12,7 @@ DB_NAME="ejabberd_db"
 DB_USER="ejabberd"
 DB_PASS="EjabberdSecurePass123"
 
-echo "🚀 Iniciando instalación de PostgreSQL..."
+echo "Iniciando instalación de PostgreSQL..."
 
 # Actualizar sistema e instalar PostgreSQL
 sudo apt update -y && sudo apt upgrade -y
