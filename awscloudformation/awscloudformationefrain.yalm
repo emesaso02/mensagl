@@ -203,6 +203,7 @@ Resources:
         - AssociatePublicIpAddress: true
           DeviceIndex: 0
           SubnetId: !Ref SubnetPublic1
+          PrivateIpAddress: 10.221.1.10
           GroupSet:
             - !Ref SecurityGroupProxy
 
@@ -219,6 +220,7 @@ Resources:
         - AssociatePublicIpAddress: true
           DeviceIndex: 0
           SubnetId: !Ref SubnetPublic2
+          PrivateIpAddress: 10.221.2.10
           GroupSet:
             - !Ref SecurityGroupProxy
 
@@ -264,6 +266,7 @@ Resources:
       NetworkInterfaces:
         - DeviceIndex: 0
           SubnetId: !Ref SubnetPrivate1
+          PrivateIpAddress: 10.221.3.30
           GroupSet:
             - !Ref SecurityGroupPostgreSQL
 
